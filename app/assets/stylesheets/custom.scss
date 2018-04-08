@@ -1,0 +1,110 @@
+$blue: #3585C5;
+$light-blue: #B2DBFE;
+$orange: #FFC156;
+$green: #73C97B;
+$white: #FFFFFF;
+$gray: #6f7171;
+$light-gray: #cfcfcf;
+$almost-white: #efefef;
+
+/*Create classe for each default color*/
+.blue{
+  color: $blue;
+}
+.orange{
+  color: $orange;
+}
+.gray{
+  color: $gray;
+}
+.white{
+  color: $white;
+}
+
+/*Create classes for default bg colors*/
+.bg-blue{
+  background: $blue;
+}
+.bg-orange{
+  background: $orange
+}
+
+/*Custom changes*/
+body{
+  font-family: 'Nunito', sans-serif;
+  color: $gray;
+}
+.navbar-default{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  .navbar-brand{
+    color: $white;
+    &:hover{
+      color: $white;
+    }
+  }
+  .browse-jobs{
+    margin-left: 100px;
+  }
+  .btn-default{
+    color: $gray;
+  }
+  .btn-warning{
+    margin-left: 5px;
+  }
+}
+
+.main-content{
+  .status{
+    padding: 20px 0 20px 0;
+  }
+  .search{
+    input[type="text"]{
+      border: 2px solid $light-blue;
+      padding: 25px;
+      font-size: 2em;
+    }
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+      color: $light-gray;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color: $light-gray;
+       opacity:  1;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color: $light-gray;
+       opacity:  1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color: $light-gray;
+    }
+  }
+  .content{
+    padding-top: 100px;
+    .box{
+      label{
+        padding-top: 15px;
+      }
+      .btn-block{
+        margin-top: 15px;
+      }
+    }
+    .job-description{
+      margin-top: 35px;
+      border-style: solid;
+      border-color: $almost-white;
+      border-width: 0 0 1px 0;
+      .job{
+        padding: 10px 0 5px 0;
+        border-style: solid;
+        border-color: $almost-white;
+        border-width: 1px 0 0 0;
+      }
+    }
+  }
+}
+
+.menu-footer{
+  padding: 20px 0 10px 30px;
+  color: $white;
+}
